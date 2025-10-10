@@ -1,0 +1,7 @@
+[cd]
+{{ if eq .chezmoi.os "windows" }}
+command = "C:/Program Files/PowerShell/7/pwsh.exe"
+{{ else }}
+command = "/usr/bin/zsh"
+{{ end }}
+
