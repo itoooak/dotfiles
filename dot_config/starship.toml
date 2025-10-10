@@ -1,0 +1,16 @@
+[hostname]
+ssh_symbol = '🌐️'
+ssh_only = false
+style = 'green bold'
+
+[username]
+format = '[$user]($style)@'
+show_always = true
+
+[env_var]
+disabled = false
+
+[env_var.CHEZMOI]
+format = '[\(chezmoi\)]($style) '
+style = 'cyan bold'
+
