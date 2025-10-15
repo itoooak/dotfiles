@@ -1,5 +1,6 @@
 {
   "barbar.nvim": { "branch": "master", "commit": "53b5a2f34b68875898f0531032fbf090e3952ad7" },
+  "capture.vim": { "branch": "master", "commit": "857ee11cfe1193948d3d45dcb8d511fded8533fb" },
   "copilot.lua": { "branch": "master", "commit": "92e08cd472653beaece28ad9c8508a851a613358" },
   "denops.vim": { "branch": "main", "commit": "a278b8342459e4687f24d4d575d72ff593326cee" },
   "gitsigns.nvim": { "branch": "main", "commit": "1ee5c1fd068c81f9dd06483e639c2aa4587dc197" },
