@@ -39,6 +39,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
+			format = {
+				enable = false,
+			},
 			diagnostics = {
 				globals = { "vim" },
 			},
