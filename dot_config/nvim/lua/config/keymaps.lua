@@ -13,9 +13,14 @@ keymap.set("n", "<leader><C-l>", "<cmd>tabnext<CR>", { desc = "Next tab" })
 keymap.set("n", "<leader>th", "<cmd>tabprevious<CR>", { desc = "Previous tab" })
 keymap.set("n", "<leader><C-h>", "<cmd>tabprevious<CR>", { desc = "Previous tab" })
 
--- terminal
-keymap.set("n", "<leader>t", "<cmd>tabnew | terminal<CR>", { silent = true, desc = "Open terminal in new tab" })
+-- buffer
+keymap.set("n", "<leader>bc", "<cmd>BufferClose<CR>", { desc = "Close buffer" })
+keymap.set("n", "<leader>bC", "<cmd>BufferCloseAllButCurrent<CR>", { desc = "Close all buffer except current one" })
+keymap.set("n", "<leader>bl", "<cmd>BufferNext<CR>", { desc = "Next buffer" })
+keymap.set("n", "<leader>bh", "<cmd>BufferPrevious<CR>", { desc = "Previous buffer" })
 
+-- terminal
+keymap.set("n", "<leader>tt", "<cmd>tabnew | terminal<CR>", { silent = true, desc = "Open terminal in new tab" })
 keymap.set("n", "<leader>tx", "<cmd>belowright | terminal<CR>", { silent = true, desc = "Open terminal in new split" })
 
 -- diagnostics
