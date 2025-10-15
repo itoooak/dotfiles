@@ -18,6 +18,8 @@ keymap.set("n", "<leader>bc", "<cmd>BufferClose<CR>", { desc = "Close buffer" })
 keymap.set("n", "<leader>bC", "<cmd>BufferCloseAllButCurrent<CR>", { desc = "Close all buffer except current one" })
 keymap.set("n", "<leader>bl", "<cmd>BufferNext<CR>", { desc = "Next buffer" })
 keymap.set("n", "<leader>bh", "<cmd>BufferPrevious<CR>", { desc = "Previous buffer" })
+keymap.set("n", "<leader>bp", "<cmd>BufferPick<CR>", { desc = "Pick buffer" })
+keymap.set("n", "<leader>bd", "<cmd>BufferPickDelete<CR>", { desc = "Pick buffer to delete" })
 
 -- terminal
 keymap.set("n", "<leader>tt", "<cmd>tabnew | terminal<CR>", { silent = true, desc = "Open terminal in new tab" })
