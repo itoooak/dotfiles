@@ -20,10 +20,22 @@ keymap.set("n", "<leader>bl", "<cmd>BufferNext<CR>", { desc = "Next buffer" })
 keymap.set("n", "<leader>bh", "<cmd>BufferPrevious<CR>", { desc = "Previous buffer" })
 keymap.set("n", "<leader>bp", "<cmd>BufferPick<CR>", { desc = "Pick buffer" })
 keymap.set("n", "<leader>bd", "<cmd>BufferPickDelete<CR>", { desc = "Pick buffer to delete" })
+keymap.set("n", "<leader>br", "<cmd>BufferRestore<CR>", { desc = "Restore buffer" })
 
 -- terminal
 keymap.set("n", "<leader>tt", "<cmd>tabnew | terminal<CR>", { silent = true, desc = "Open terminal in new tab" })
-keymap.set("n", "<leader>tx", "<cmd>belowright | terminal<CR>", { silent = true, desc = "Open terminal in new split" })
 
 -- diagnostics
-keymap.set("n", "<leader>i", "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "Open diagnostic float" })
+keymap.set("n", "<leader>df", "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "Open diagnostic float" })
+keymap.set("n", "<leader>dn", "<cmd>lua vim.diagnostic.goto_next()<CR>", { desc = "Next diagnostic" })
+keymap.set("n", "<leader>dp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { desc = "Previous diagnostic" })
+
+-- LSP
+keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", { desc = "Code action" })
+keymap.set("n", "<leader>lD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { desc = "Show declaration" })
+keymap.set("n", "<leader>ld", "<cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Show definition" })
+keymap.set("n", "<leader>ls", "<cmd>lua vim.lsp.buf.document_symbol()<CR>", { desc = "Show symbols" })
+keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format()<CR>", { desc = "Format" })
+keymap.set("n", "<leader>li", "<cmd>lua vim.lsp.buf.implementation()<CR>", { desc = "Show implementation" })
+keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.references()<CR>", { desc = "Show reference" })
+keymap.set("n", "<leader>lt", "<cmd>lua vim.lsp.buf.type_definition()<CR>", { desc = "Show type definition" })
