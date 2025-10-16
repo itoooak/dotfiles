@@ -7,23 +7,22 @@ return {
 		vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = "#bf616a" })
 
 		require("gitsigns").setup({
-			-- TODO: styluaのformatに失敗するため使えない文字があったが、上流で修正が入ったのでじきに使えるようになるはず
 			current_line_blame = true,
 			signs = {
 				add = { text = "+" },
 				change = { text = "~" },
 				delete = { text = "-" },
-				topdelete = { text = "^" },
+				topdelete = { text = "‾" },
 				changedelete = { text = "~" },
-				untracked = { text = "|" },
+				untracked = { text = "┆" },
 			},
 			signs_staged = {
-				add = { text = "+" },
-				change = { text = "~" },
-				delete = { text = "-" },
-				topdelete = { text = "^" },
-				changedelete = { text = "~" },
-				untracked = { text = "|" },
+				add = { text = "┃" },
+				change = { text = "┃" },
+				delete = { text = "_" },
+				topdelete = { text = "‾" },
+				changedelete = { text = "┃" },
+				untracked = { text = "┆" },
 			},
 		})
 	end,
