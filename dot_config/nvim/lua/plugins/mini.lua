@@ -5,9 +5,6 @@ return {
 		require("mini.files").setup()
 		vim.keymap.set("n", "<leader>e", "<cmd>lua MiniFiles.open()<CR>", { desc = "Open MiniFiles" })
 
-		require("mini.notify").setup()
-		vim.notify = require("mini.notify").make_notify({})
-
 		require("mini.trailspace").setup()
 		vim.api.nvim_create_user_command("Trim", function()
 			MiniTrailspace.trim()

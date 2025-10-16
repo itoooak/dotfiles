@@ -17,5 +17,8 @@ return {
 		vim.keymap.set("n", "<leader>fC", builtin.command_history, { desc = "Telescope command history" })
 		vim.keymap.set("n", "<leader>fq", builtin.quickfix, { desc = "Telescope quickfix" })
 		vim.keymap.set("n", "<leader>fQ", builtin.quickfixhistory, { desc = "Telescope quickfix history" })
+
+		-- nvim-notify
+		vim.keymap.set("n", "<leader>fn", "<cmd>Telescope notify<CR>", { desc = "Telescope notify" })
 	end,
 }
