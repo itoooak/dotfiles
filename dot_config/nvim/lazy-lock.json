@@ -19,5 +19,5 @@
   "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "vim-ambicmd": { "branch": "master", "commit": "884e3206708f95dda7598d2a060ce7ae4c2aa189" },
-  "vim-gin": { "branch": "main", "commit": "c165cfb01981dc01b561914fdd1651c140aa7014" }
+  "vim-gin": { "branch": "main", "commit": "e447c29b9eb86152cd5d293b9a1f0293e9a1311b" }
 }
