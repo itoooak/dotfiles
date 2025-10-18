@@ -1,5 +1,3 @@
-local builtin = require("telescope.builtin")
-
 return {
 	"nvim-telescope/telescope.nvim",
 	tag = "0.1.8",
@@ -10,14 +8,14 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	keys = {
-		{ "<leader>ff", builtin.find_files, desc = "Telescope find files" },
-		{ "<leader>fg", builtin.live_grep, desc = "Telescope live grep" },
-		{ "<leader>fb", builtin.buffers, desc = "Telescope buffers" },
-		{ "<leader>fh", builtin.help_tags, desc = "Telescope help tags" },
-		{ "<leader>fc", builtin.commands, desc = "Telescope commands" },
-		{ "<leader>fC", builtin.command_history, desc = "Telescope command history" },
-		{ "<leader>fq", builtin.quickfix, desc = "Telescope quickfix" },
-		{ "<leader>fQ", builtin.quickfixhistory, desc = "Telescope quickfix history" },
+		{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Telescope find files" },
+		{ "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Telescope live grep" },
+		{ "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Telescope buffers" },
+		{ "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "Telescope help tags" },
+		{ "<leader>fc", "<cmd>Telescope commands<CR>", desc = "Telescope commands" },
+		{ "<leader>fC", "<cmd>Telescope command_history<CR>", desc = "Telescope command history" },
+		{ "<leader>fq", "<cmd>Telescope quickfix<CR>", desc = "Telescope quickfix" },
+		{ "<leader>fQ", "<cmd>Telescope quickfixhistory<CR>", desc = "Telescope quickfix history" },
 		-- nvim-notify
 		{ "<leader>fn", "<cmd>Telescope notify<CR>", desc = "Telescope notify" },
 	},
