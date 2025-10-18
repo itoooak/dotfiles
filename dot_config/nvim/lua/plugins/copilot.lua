@@ -1,8 +1,6 @@
 return {
 	"zbirenbaum/copilot.lua",
-	dependencies = {
-		-- "copilotlsp-nvim/copilot-lsp", -- (optional) for NES functionality
-	},
+	dependencies = {},
 	config = function()
 		require("copilot").setup({
 			filetypes = {
