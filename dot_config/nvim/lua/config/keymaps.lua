@@ -14,6 +14,7 @@ keymap.set("n", "<leader>th", "<cmd>tabprevious<CR>", { desc = "Previous tab" })
 keymap.set("n", "<leader><C-h>", "<cmd>tabprevious<CR>", { desc = "Previous tab" })
 
 -- buffer
+keymap.set("n", "<leader>q", "<cmd>BufferClose<CR>", { desc = "Close buffer" })
 keymap.set("n", "<leader>bc", "<cmd>BufferClose<CR>", { desc = "Close buffer" })
 keymap.set("n", "<leader>bC", "<cmd>BufferCloseAllButCurrent<CR>", { desc = "Close all buffer except current one" })
 keymap.set("n", "<leader>bl", "<cmd>BufferNext<CR>", { desc = "Next buffer" })
