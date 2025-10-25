@@ -15,6 +15,8 @@ vim.api.nvim_create_autocmd("FileType", {
 	command = "setlocal wrap",
 })
 
+opt.virtualedit = "all"
+
 opt.cursorline = true
 
 opt.tabstop = 4
