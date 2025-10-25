@@ -44,7 +44,6 @@ return {
 			MiniTrailspace.trim_last_lines()
 		end, { desc = "Trim trailing space and last blank lines" })
 
-		require("mini.pairs").setup()
 		require("mini.surround").setup()
 
 		local gen_ai_spec = require("mini.extra").gen_ai_spec
