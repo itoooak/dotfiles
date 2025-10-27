@@ -1,7 +1,7 @@
 return {
 	"haya14busa/vim-edgemotion",
 	keys = {
-		{ "<C-j>", "<Plug>(edgemotion-j)" },
-		{ "<C-k>", "<Plug>(edgemotion-k)" },
+		{ "<M-j>", "<Plug>(edgemotion-j)" },
+		{ "<M-k>", "<Plug>(edgemotion-k)" },
 	},
 }
