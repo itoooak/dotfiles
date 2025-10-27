@@ -22,6 +22,8 @@ keymap.set("n", "<leader>bh", "<cmd>BufferPrevious<CR>", { desc = "Previous buff
 keymap.set("n", "<leader>bp", "<cmd>BufferPick<CR>", { desc = "Pick buffer" })
 keymap.set("n", "<leader>bd", "<cmd>BufferPickDelete<CR>", { desc = "Pick buffer to delete" })
 keymap.set("n", "<leader>br", "<cmd>BufferRestore<CR>", { desc = "Restore buffer" })
+keymap.set("n", "<leader>b<", "<cmd>BufferMovePrevious<CR>", { desc = "Move buffer to left" })
+keymap.set("n", "<leader>b>", "<cmd>BufferMoveNext<CR>", { desc = "Move buffer to right" })
 
 -- terminal
 keymap.set("n", "<leader>tt", "<cmd>tabnew | terminal<CR>", { silent = true, desc = "Open terminal in new tab" })
