@@ -44,7 +44,18 @@ return {
 			MiniTrailspace.trim_last_lines()
 		end, { desc = "Trim trailing space and last blank lines" })
 
-		require("mini.surround").setup()
+		require("mini.surround").setup({
+			custom_surroundings = {
+				["k"] = {
+					input = { "「().-()」" },
+					output = { left = "「", right = "」" },
+				},
+				["K"] = {
+					input = { "『().-()』" },
+					output = { left = "『", right = "』" },
+				},
+			},
+		})
 
 		local gen_ai_spec = require("mini.extra").gen_ai_spec
 		require("mini.ai").setup({
