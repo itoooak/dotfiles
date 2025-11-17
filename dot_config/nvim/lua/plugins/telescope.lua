@@ -16,6 +16,8 @@ return {
 		{ "<leader>fC", "<cmd>Telescope command_history<CR>", desc = "Telescope command history" },
 		{ "<leader>fq", "<cmd>Telescope quickfix<CR>", desc = "Telescope quickfix" },
 		{ "<leader>fQ", "<cmd>Telescope quickfixhistory<CR>", desc = "Telescope quickfix history" },
+		{ "<leader>fB", "<cmd>Telescope builtin<CR>", desc = "Telescope builtin" },
+		{ "<leader>fo", "<cmd>Telescope oldfiles<CR>", desc = "Telescope oldfiles" },
 		-- nvim-notify
 		{ "<leader>fn", "<cmd>Telescope notify<CR>", desc = "Telescope notify" },
 	},
