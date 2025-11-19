@@ -49,3 +49,13 @@ keymap.set(
 	"<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<CR>",
 	{ desc = "Toggle inlay hints" }
 )
+
+do
+	vim.keymap.set("n", "]<Space>", function()
+		vim.fn.append(vim.fn.line("."), "")
+	end, { desc = "Add empty line below" })
+
+	vim.keymap.set("n", "[<Space>", function()
+		vim.fn.append(vim.fn.line(".") - 1, "")
+	end, { desc = "Add empty line above" })
+end
