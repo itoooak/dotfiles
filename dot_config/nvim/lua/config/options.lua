@@ -25,8 +25,6 @@ opt.expandtab = true
 
 opt.termguicolors = true
 
-opt.clipboard:append("unnamedplus,unnamed")
-
 opt.ignorecase = true
 opt.smartcase = true
 
@@ -41,4 +39,31 @@ if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
 	opt.shellpipe = [[2>&1 | %%{ "$_" } | tee %s; exit $LastExitCode]]
 	opt.shellquote = ""
 	opt.shellxquote = ""
+end
+
+-- clipboard settings
+-- TODO: 先頭・末尾の空行が消えてしまう問題の修正
+do
+	-- https://zenn.ev/goropikari/articles/506e08e7ad52af
+
+	opt.clipboard:append("unnamedplus")
+
+	local function paste()
+		return {
+			vim.fn.split(vim.fn.getreg(""), "\n"),
+			vim.fn.getregtype(""),
+		}
+	end
+
+	vim.g.clipboard = {
+		name = "OSC 52",
+		copy = {
+			["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+			["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+		},
+		paste = {
+			["+"] = paste,
+			["*"] = paste,
+		},
+	}
 end
