@@ -1,5 +1,6 @@
 return {
 	"zbirenbaum/copilot.lua",
+	event = "VeryLazy",
 	dependencies = {},
 	config = function()
 		require("copilot").setup({

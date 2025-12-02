@@ -1,5 +1,6 @@
 return {
 	"lambdalisue/vim-gin",
+	event = "VeryLazy",
 	dependencies = {
 		"vim-denops/denops.vim",
 	},
