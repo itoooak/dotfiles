@@ -27,6 +27,7 @@ keymap.set("n", "<leader>b>", "<cmd>BufferMoveNext<CR>", { desc = "Move buffer t
 
 -- terminal
 keymap.set("n", "<leader>tt", "<cmd>tabnew | terminal<CR>", { silent = true, desc = "Open terminal in new tab" })
+keymap.set("t", "<C-\\>", "<C-\\><C-n>", { nowait = true })
 
 -- diagnostics
 keymap.set("n", "<leader>df", "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "Open diagnostic float" })
