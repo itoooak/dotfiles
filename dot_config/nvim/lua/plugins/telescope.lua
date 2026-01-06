@@ -6,6 +6,9 @@ return {
 		-- optional
 		"nvim-treesitter/nvim-treesitter",
 		"nvim-tree/nvim-web-devicons",
+		-- plugin
+		"rcarriga/nvim-notify",
+		"jvgrootveld/telescope-zoxide",
 	},
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Telescope find files" },
@@ -20,5 +23,7 @@ return {
 		{ "<leader>fo", "<cmd>Telescope oldfiles<CR>", desc = "Telescope oldfiles" },
 		-- nvim-notify
 		{ "<leader>fn", "<cmd>Telescope notify<CR>", desc = "Telescope notify" },
+		-- telescope-zoxide
+		{ "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "Telescope zoxide list" },
 	},
 }
