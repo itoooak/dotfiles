@@ -27,6 +27,7 @@
   "telescope-tabs": { "branch": "master", "commit": "777b1f630f3d6a12a2e71635a82581c988d6da2e" },
   "telescope-zoxide": { "branch": "main", "commit": "54bfe630bad08dc9891ec78c7cf8db38dd725c97" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
+  "toggleterm.nvim": { "branch": "main", "commit": "50ea089fc548917cc3cc16b46a8211833b9e3c7c" },
   "vim-edgemotion": { "branch": "master", "commit": "8d16bd92f6203dfe44157d43be7880f34fd5c060" },
   "vim-gin": { "branch": "main", "commit": "e9200f66986ddd447220166d4467f9c92c8565a4" },
   "vimtex": { "branch": "master", "commit": "a50f40783c1cade2e8e2994a9f4a8e038a0a57bc" }
