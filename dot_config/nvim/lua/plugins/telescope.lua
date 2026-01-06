@@ -9,6 +9,7 @@ return {
 		-- plugin
 		"rcarriga/nvim-notify",
 		"jvgrootveld/telescope-zoxide",
+		"LukasPietzschmann/telescope-tabs",
 	},
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Telescope find files" },
@@ -25,5 +26,7 @@ return {
 		{ "<leader>fn", "<cmd>Telescope notify<CR>", desc = "Telescope notify" },
 		-- telescope-zoxide
 		{ "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "Telescope zoxide list" },
+		-- telescope-tabs
+		{ "<leader>ft", "<cmd>Telescope telescope-tabs list_tabs<CR>", desc = "Telescope telescope-tabs list_tabs" },
 	},
 }
