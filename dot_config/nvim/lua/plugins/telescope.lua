@@ -27,6 +27,7 @@ return {
 		-- telescope-zoxide
 		{ "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "Telescope zoxide list" },
 		-- telescope-tabs
+		-- TODO: 選択画面でcurrent directoryを表示する
 		{ "<leader>ft", "<cmd>Telescope telescope-tabs list_tabs<CR>", desc = "Telescope telescope-tabs list_tabs" },
 	},
 }
