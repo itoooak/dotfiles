@@ -10,7 +10,7 @@ return {
 			},
 			suggestion = {
 				keymap = {
-					accept = "<C-y>",
+					accept = "<M-y>",
 					dismiss = "<C-]>",
 				},
 			},
