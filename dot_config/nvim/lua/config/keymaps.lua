@@ -3,6 +3,12 @@ local keymap = vim.keymap
 -- leaderと衝突するため<Space>のデフォルト動作を無効化
 keymap.set({ "x", "s" }, "<Space>", "<Nop>", { silent = true })
 
+-- insert
+vim.keymap.set("i", "<C-g><C-h>", "<Left>", { desc = "Move left" })
+vim.keymap.set("i", "<C-g><C-l>", "<Right>", { desc = "Move right" })
+vim.keymap.set("i", "<C-g>h", "<Left>", { desc = "Move left" })
+vim.keymap.set("i", "<C-g>l", "<Right>", { desc = "Move right" })
+
 -- tab
 keymap.set("n", "<leader>tn", "<cmd>tabnew<CR>", { desc = "New tab" })
 keymap.set("n", "<leader><C-t>", "<cmd>tabnew<CR>", { desc = "New tab" })
