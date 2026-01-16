@@ -11,6 +11,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"text",
 		"gitcommit",
 		"plaintex",
+		"tex",
 	},
 	command = "setlocal wrap",
 })
