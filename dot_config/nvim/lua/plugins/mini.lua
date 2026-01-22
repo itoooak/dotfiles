@@ -46,6 +46,10 @@ return {
 
 		require("mini.surround").setup({
 			custom_surroundings = {
+				["p"] = {
+					input = { "（().-()）" },
+					output = { left = "（", right = "）" },
+				},
 				["k"] = {
 					input = { "「().-()」" },
 					output = { left = "「", right = "」" },
