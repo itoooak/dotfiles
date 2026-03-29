@@ -6,4 +6,5 @@ README.md
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
+.local/bin/suggest-commit-message.ps1
 {{ end }}
