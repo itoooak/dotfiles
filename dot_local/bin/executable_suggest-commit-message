@@ -1,0 +1,34 @@
+#!/bin/bash
+set -euo pipefail
+
+AGENT=${1:-copilot}
+DIFF=$(git diff --cached --no-color)
+
+if [[ -z "$DIFF" ]]; then
+    echo "# No staged changes found"
+    exit 0
+fi
+
+PROMPT="Generate ONLY a one-line Git commit message in Conventional Commits format.
+
+Rules:
+- Use imperative mood for description
+- Base strictly on the diff contents provided below
+- Do not add explanation, body, or any other text
+- Output only the commit summary line
+
+Diff:
+$DIFF"
+
+case "$AGENT" in
+    copilot)
+        copilot --prompt "$PROMPT" --silent
+        ;;
+    gemini)
+        gemini --prompt "$PROMPT"
+        ;;
+    *)
+        echo "# Unknown AI agent: $AGENT (supported: copilot, gemini)"
+        exit 1
+        ;;
+esac
