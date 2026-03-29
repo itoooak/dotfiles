@@ -1,4 +1,16 @@
 vim.api.nvim_create_autocmd("FileType", {
+	pattern = {
+		"markdown",
+		"typst",
+		"text",
+		"gitcommit",
+		"plaintex",
+		"tex",
+	},
+	command = "setlocal wrap",
+})
+
+vim.api.nvim_create_autocmd("FileType", {
 	pattern = "gitcommit",
 	callback = function()
 		vim.keymap.set("n", "<leader>ai", function()
