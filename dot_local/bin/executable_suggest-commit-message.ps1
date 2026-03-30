@@ -2,6 +2,8 @@ param(
     [string]$Agent = "copilot"
 )
 
+# TODO: プロンプトに`git diff --staged`の結果を埋め込む
+
 $ErrorActionPreference = "Stop"
 
 $Status = git diff --cached --quiet 2>&1
