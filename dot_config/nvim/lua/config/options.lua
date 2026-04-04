@@ -19,3 +19,5 @@ opt.ignorecase = true
 opt.smartcase = true
 
 opt.completeopt = "menuone,popup,noselect"
+
+opt.exrc = true
