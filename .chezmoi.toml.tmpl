@@ -1,9 +1,7 @@
 [cd]
 {{ if eq .chezmoi.os "windows" }}
-command = "C:/Program Files/PowerShell/7/pwsh.exe"
-{{ else if eq .chezmoi.os "darwin" }}
-command = "/bin/zsh"
+command = "pwsh"
 {{ else }}
-command = "/usr/bin/zsh"
+command = "zsh"
 {{ end }}
 
