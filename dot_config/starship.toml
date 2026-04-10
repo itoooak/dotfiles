@@ -10,7 +10,9 @@ show_always = true
 [env_var]
 disabled = false
 
+[nix_shell]
+heuristic = true
+
 [env_var.CHEZMOI]
 format = '[\(chezmoi\)]($style) '
 style = 'cyan bold'
-
