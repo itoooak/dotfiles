@@ -1,4 +1,4 @@
--- :h lsp-attach
+-- :h lsp-attach
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("my.lsp", {}),
 	callback = function(args)
@@ -41,3 +41,17 @@ vim.lsp.config("lua_ls", {
 		},
 	},
 })
+
+vim.lsp.config("nil", {
+	cmd = { "nil" },
+	filetypes = { "nix" },
+	root_markers = { "flake.nix", ".git" },
+	settings = {
+		["nil"] = {
+			formatting = {
+				command = { "nixfmt" },
+			},
+		},
+	},
+})
+vim.lsp.enable("nil")
