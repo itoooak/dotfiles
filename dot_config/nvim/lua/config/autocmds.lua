@@ -11,6 +11,28 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
+	pattern = {
+		"json",
+		"yaml",
+		"toml",
+		"nix",
+		"html",
+		"css",
+		"javascript",
+		"typescript",
+		"jsx",
+		"tsx",
+	},
+	callback = function()
+		local o = vim.opt_local
+		o.expandtab = true
+		o.shiftwidth = 2
+		o.softtabstop = 2
+		o.tabstop = 2
+	end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
 	pattern = "gitcommit",
 	callback = function()
 		vim.keymap.set("n", "<leader>ai", function()
