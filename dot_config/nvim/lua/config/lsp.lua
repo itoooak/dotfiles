@@ -55,3 +55,21 @@ vim.lsp.config("nil", {
 	},
 })
 vim.lsp.enable("nil")
+
+vim.lsp.config("pyright", {
+	settings = {
+		pyright = {
+			disableOrganizeImports = true,
+		},
+		python = {
+			analysis = {
+				ignore = { "*" },
+				typeCheckingMode = "basic",
+			},
+		},
+	},
+})
+vim.lsp.enable("pyright")
+
+vim.lsp.config("ruff", {})
+vim.lsp.enable("ruff")
