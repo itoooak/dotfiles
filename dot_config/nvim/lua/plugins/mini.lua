@@ -46,7 +46,7 @@ return {
 
 		require("mini.surround").setup({
 			custom_surroundings = {
-				["p"] = {
+				["P"] = {
 					input = { "（().-()）" },
 					output = { left = "（", right = "）" },
 				},
@@ -61,6 +61,7 @@ return {
 			},
 		})
 
+		local gen_spec = require("mini.ai").gen_spec
 		local gen_ai_spec = require("mini.extra").gen_ai_spec
 		require("mini.ai").setup({
 			custom_textobjects = {
@@ -69,6 +70,9 @@ return {
 				I = gen_ai_spec.indent(),
 				L = gen_ai_spec.line(),
 				N = gen_ai_spec.number(),
+				P = gen_spec.pair("（", "）", {}),
+				k = gen_spec.pair("「", "」", {}),
+				K = gen_spec.pair("『", "』", {}),
 			},
 		})
 
