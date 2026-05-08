@@ -73,3 +73,6 @@ vim.lsp.enable("pyright")
 
 vim.lsp.config("ruff", {})
 vim.lsp.enable("ruff")
+
+vim.lsp.config("yamlls", {})
+vim.lsp.enable("yamlls")
