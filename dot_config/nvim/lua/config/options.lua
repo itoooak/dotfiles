@@ -21,3 +21,7 @@ opt.smartcase = true
 opt.completeopt = "menuone,popup,noselect"
 
 opt.exrc = true
+
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldlevel = 99
