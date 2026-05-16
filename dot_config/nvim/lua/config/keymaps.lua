@@ -37,11 +37,6 @@ keymap.set("n", "<leader>b>", "<cmd>BufferMoveNext<CR>", { desc = "Move buffer t
 keymap.set("n", "<leader>tt", "<cmd>tabnew | terminal<CR>", { silent = true, desc = "Open terminal in new tab" })
 keymap.set("t", "<C-\\>", "<C-\\><C-n>", { nowait = true })
 
--- diagnostics
-keymap.set("n", "<leader>df", "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "Open diagnostic float" })
-keymap.set("n", "<leader>dn", "<cmd>lua vim.diagnostic.goto_next()<CR>", { desc = "Next diagnostic" })
-keymap.set("n", "<leader>dp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { desc = "Previous diagnostic" })
-
 -- LSP
 keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", { desc = "Code action" })
 keymap.set("n", "<leader>lD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { desc = "Show declaration" })
