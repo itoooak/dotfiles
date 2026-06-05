@@ -76,3 +76,8 @@ vim.lsp.enable("ruff")
 
 vim.lsp.config("yamlls", {})
 vim.lsp.enable("yamlls")
+
+vim.lsp.config("ocamllsp", {})
+vim.lsp.enable("ocamllsp")
+vim.lsp.config("ocamlformat", {})
+vim.lsp.enable("ocamlformat")
