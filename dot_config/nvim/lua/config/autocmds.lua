@@ -22,6 +22,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"typescript",
 		"jsx",
 		"tsx",
+		"ocaml",
 	},
 	callback = function()
 		local o = vim.opt_local
