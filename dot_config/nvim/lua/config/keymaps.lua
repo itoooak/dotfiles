@@ -63,3 +63,12 @@ do
 		vim.fn.append(vim.fn.line(".") - 1, "")
 	end, { desc = "Add empty line above" })
 end
+
+do
+	local yank = require("utils.yank")
+	keymap.set("x", "<leader>y", yank.copy_and_trim, { desc = "Copy and trim common indentation" })
+	keymap.set("n", "<leader>y", function()
+		vim.go.operatorfunc = "v:lua.require'utils.yank'.copy_and_trim_operator"
+		return "g@"
+	end, { expr = true, desc = "Copy and trim common indentation (operator)" })
+end
