@@ -4,12 +4,11 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		-- optional
-		"nvim-treesitter/nvim-treesitter",
 		"nvim-tree/nvim-web-devicons",
-		-- plugin
+		-- extension
 		"rcarriga/nvim-notify",
 		"jvgrootveld/telescope-zoxide",
-		"LukasPietzschmann/telescope-tabs",
+		"https://codeberg.org/LukasPietzschmann/telescope-tabs.git",
 	},
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Telescope find files" },

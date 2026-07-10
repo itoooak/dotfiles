@@ -2,6 +2,13 @@
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("my.lsp", {}),
 	callback = function(args)
+		if vim.b[args.buf].large_file_detected then
+			vim.schedule(function()
+				vim.lsp.buf_detach_client(args.buf, args.data.client_id)
+			end)
+			return
+		end
+
 		local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
 
 		-- Auto-format ("lint") on save.

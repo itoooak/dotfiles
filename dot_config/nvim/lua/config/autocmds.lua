@@ -75,7 +75,6 @@ vim.api.nvim_create_autocmd("BufReadPre", {
 		if stat and stat.size > LARGE_FILE_THRESHOLD then
 			vim.notify("Large file detected. Some features have been disabled.")
 
-			-- TODO: lsp, treesitter, indent_blankline
 			vim.b[bufnr].large_file_detected = true
 
 			vim.opt_local.swapfile = false
