@@ -23,6 +23,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"jsx",
 		"tsx",
 		"ocaml",
+		"markdown",
 	},
 	callback = function()
 		local o = vim.opt_local
