@@ -1,0 +1,4 @@
+sandbox_mode = "read-only"
+approval_policy = "on-request"
+approvals_reviewer = "user"
+check_for_update_on_startup = false
