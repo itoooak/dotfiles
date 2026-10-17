@@ -88,3 +88,5 @@ vim.lsp.config("ocamllsp", {})
 vim.lsp.enable("ocamllsp")
 vim.lsp.config("ocamlformat", {})
 vim.lsp.enable("ocamlformat")
+
+vim.lsp.enable("gopls")
