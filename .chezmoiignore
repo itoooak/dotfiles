@@ -2,9 +2,4 @@ README.md
 
 {{ if eq .chezmoi.os "windows" }}
 .tmux.conf
-.local/bin/suggest-commit-message
-{{ end }}
-
-{{ if ne .chezmoi.os "windows" }}
-.local/bin/suggest-commit-message.ps1
 {{ end }}
